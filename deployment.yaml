@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-argo
+  namespace: hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: hello-argo }
+  template:
+    metadata:
+      labels: { app: hello-argo }
+    spec:
+      containers:
+      - name: hello
+        image: docker.io/<dockerhub-user>/hello-argo:0.0.1   # Jenkins updates this tag
+        imagePullPolicy: IfNotPresent
