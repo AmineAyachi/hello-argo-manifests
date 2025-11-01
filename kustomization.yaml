@@ -3,5 +3,5 @@ resources:
   - deployment.yaml
   - service.yaml
 images:
-  - name: docker.io/<dockerhub-user>/hello-argo
-    newTag: 0.0.1
+  - name: docker.io/amineayachi/hello-argo
+    newTag: 2
