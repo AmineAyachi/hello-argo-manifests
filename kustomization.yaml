@@ -4,4 +4,4 @@ resources:
   - service.yaml
 images:
   - name: docker.io/amineayachi/hello-argo
-    newTag: 2
+    newTag: 3
